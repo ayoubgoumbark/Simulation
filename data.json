@@ -1,0 +1,182 @@
+{
+  "TarificationAutoDto": [
+    {
+      "pack": "Basic",
+      "cotisationTTC": "7986.00",
+      "listeGarantie": [
+        {
+          "idGarantie": "1",
+          "libelleGarantie": "garantie1",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "3",
+          "libelleGarantie": "garantie1",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "2",
+          "libelleGarantie": "garantie1",
+          "acquise": "O"
+        }
+      ]
+    },
+    {
+      "pack": "Standard",
+      "cotisationTTC": "00.00",
+      "listeGarantie": [
+        {
+          "idGarantie": "6",
+          "libelleGarantie": "garantie1",
+          "acquise": "O",
+          "listeFranchise": [
+            {
+              "libelleFranchise": "Franchise1",
+              "idFranchise": "1"
+            },
+            {
+              "libelleFranchise": "Franchise2",
+              "idFranchise": "2"
+            },
+            {
+              "libelleFranchise": "Franchise3",
+              "idFranchise": "3"
+            }
+          ]
+        },
+        {
+          "idGarantie": "3",
+          "libelleGarantie": "garantie2",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "4",
+          "libelleGarantie": "garantie3",
+          "acquise": "N"
+        },
+        {
+          "idGarantie": "7",
+          "libelleGarantie": "garantie4",
+          "acquise": "N"
+        }
+      ],
+      "automobil": {
+        "idFranchiseChoisi": "",
+        "valeurGlaces": "",
+        "valeurVenale": "",
+        "valeuraNeuf": ""
+      }
+    },
+    {
+      "pack": "Premium",
+      "cotisationTTC": "00.00",
+      "listeGarantie": [
+        {
+          "idGarantie": "1",
+          "libelleGarantie": "garantie1",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "3",
+          "libelleGarantie": "garantie2",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "2",
+          "libelleGarantie": "garantie3",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "4",
+          "libelleGarantie": "garantie4",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "5",
+          "libelleGarantie": "garantie5",
+          "acquise": "O"
+        },
+        {
+          "idGarantie": "6",
+          "libelleGarantie": "garantie6",
+          "acquise": "O"
+        }
+      ],
+      "automobil": {
+        "idFranchiseChoisi": "",
+        "valeurGlaces": "",
+        "valeurVenale": "",
+        "valeuraNeuf": ""
+      }
+    }
+  ],
+  "TarificationAutoStandard": {
+    "pack": "Standard",
+    "cotisationTTC": "3243.00",
+    "listeGarantie": [
+      {
+        "idGarantie": "1",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "3",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "2",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      }
+    ],
+    "automobil": {
+      "idFranchiseChoisi": "1",
+      "valeurGlaces": "345",
+      "valeurVenale": "45",
+      "valeuraNeuf": "45345"
+    }
+  },
+  "TarificationAutoPremium": {
+    "pack": "Premium",
+    "cotisationTTC": "7243.00",
+    "listeGarantie": [
+      {
+        "idGarantie": "1",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "3",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "2",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "4",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "5",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      },
+      {
+        "idGarantie": "6",
+        "libelleGarantie": "garantie1",
+        "acquise": "O"
+      }
+    ],
+    "automobil": {
+      "idFranchiseChoisi": "1",
+      "valeurGlaces": "345",
+      "valeurVenale": "45",
+      "valeuraNeuf": "45345"
+    }
+  }
+}

@@ -1,29 +1,82 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
 
-Vue.use(VueRouter)
+import AutoSimulation from "../views/AutoSimulation.vue";
+import MRHsimulationVue from "../views/MRHsimulation.vue";
+
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
+    meta:{
+
+      lightNav:{
+        color: "white",
+        coloritem:"black",
+     },    
+     PrimaryNav:{
+        color: "rgb(52 162 227)",
+        coloritem:"white",
+     },
+    
+
+
+    }
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+    path: "/AutoSimulation",
+    name: "AutoSimulation",
+    component: AutoSimulation,
+    meta:{
+
+      lightNav:{
+        color: "#e5e5e5",
+        coloritem:"black",
+     },    
+     PrimaryNav:{
+      color: "#e5e5e5",
+      coloritem:"black",
+     }
+
+
+    }
+  },
+  {
+    path: "/MRHsimulation",
+    name: "MRHsimulation",
+    component: MRHsimulationVue,
+    meta:{
+
+      lightNav:{
+        color: "#e5d7ca",
+        coloritem:"black",
+     },    
+     PrimaryNav:{
+      color: "#e5d7ca",
+      coloritem:"black",
+     },
+    
+
+
+    }
+  },
+ 
+ 
+ 
+  
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
+  routes,
+});
 
-export default router
+export default router;
