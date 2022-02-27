@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 const API = axios.create({
- baseURL: `http://https://server-simulation.herokuapp.com/`,
+ baseURL: `https://server-simulation.herokuapp.com/`,
  headers: {
     'Content-Type': 'application/json'    
     
