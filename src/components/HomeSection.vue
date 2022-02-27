@@ -32,7 +32,7 @@
        
         <v-col cols="12" md="6" xl="6">
           <!--  class="hidden-sm-and-down" -->
-          <v-img src="@/assets/img/mainhome.svg"></v-img>
+          <v-img src="@/assets/img/mainhome.svg" ></v-img>
 
         </v-col>
 

@@ -1,7 +1,16 @@
 <template>
-  <v-app ref="app" id="app" class="d-none" >
+  <v-app ref="app" >
+
+<loading v-if="$root.loading"></loading>
+  <template v-else>
+
+
+
     <navigation :color="selectedstyle.color" :flat="flat" :coloritem="selectedstyle.coloritem"/>
     <v-main color="red" class=" ">
+
+
+
      <router-view  ></router-view>
 
     </v-main>
@@ -22,6 +31,7 @@
       </v-btn>
     </v-scale-transition>
     <foote />
+    </template>
   </v-app>
 </template>
 
@@ -50,11 +60,13 @@
 import navigation from "./components/Navigation";
 import foote from "./components/Footer";
 import contact from "./components/ContactSection";
+import loading from "./components/loading";
 
 export default {
   name: "App",
 
   components: {
+    loading,
     navigation,
     foote,
 contact
@@ -74,14 +86,7 @@ contact
 
   }),
 
-mounted(){
-window.addEventListener("load", () => {
 
-
-document.getElementById("app").style.setProperty('display', 'block', 'important');
-});
-
-},
 
   watch: {
 '$route':{

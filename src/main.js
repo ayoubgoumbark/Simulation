@@ -12,10 +12,19 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 Vue.config.productionTip = false
 
-
-new Vue({
+const app=new Vue({
   router,
   store,
   vuetify,
+   data: { loading: false },
   render: h => h(App)
 }).$mount('#app')
+
+router.beforeEach((to, from, next) => {
+  app.loading = true
+    next()
+})
+
+router.afterEach(() => {
+  setTimeout(() => app.loading = false, 3500) // timeout for demo purposes
+})
