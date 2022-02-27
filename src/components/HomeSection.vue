@@ -187,8 +187,7 @@ export default {
     navigate: function (val) {
       this.produit = val;
 
-if( this.produit!="AUTO")return;
-
+   if( this.produit!="AUTO")return;
 
       if (this.produit == "AUTO") {
         this.$router.push("/AutoSimulation");
@@ -313,7 +312,7 @@ position: absolute;
 }
 #hero{
   
-  height: 213vh;
+  height: 220vh;
 }
 
 }

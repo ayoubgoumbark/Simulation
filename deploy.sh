@@ -3,8 +3,7 @@ set -e
 
 
 git init 
-git add -A
+git add .
 git commit -m 'New Deployment'
-
 git push -f git@github.com:ayoubgoumbark/Simulation.git master:gh-pages
 cd -
