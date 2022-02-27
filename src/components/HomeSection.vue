@@ -124,10 +124,11 @@
             >
               <v-hover v-slot:default="{ hover }">
                 <v-card
+              
                   class="card"
                   shaped
                   :elevation="hover ? 10 : 4"
-                  :class="{ up: hover }"
+                  :class="{ up: hover ,disabledcard:feature.link!='AUTO'}"
                 >
                   <v-img
                     :src="feature.img"
@@ -469,6 +470,10 @@ top: 80px;
 width: 100vw;
 height:100vh;
 
+}
+
+.disabledcard{
+  filter: grayscale(1) blur(3px);
 }
 
 </style>
