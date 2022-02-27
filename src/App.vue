@@ -1,5 +1,5 @@
 <template>
-  <v-app v-cloak>
+  <v-app ref="app" id="app" class="d-none" >
     <navigation :color="selectedstyle.color" :flat="flat" :coloritem="selectedstyle.coloritem"/>
     <v-main color="red" class=" ">
      <router-view  ></router-view>
@@ -74,7 +74,14 @@ contact
 
   }),
 
+mounted(){
+window.addEventListener("load", () => {
 
+
+document.getElementById("app").style.setProperty('display', 'block', 'important');
+});
+
+},
 
   watch: {
 '$route':{
