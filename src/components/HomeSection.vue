@@ -4,7 +4,7 @@
     <v-container  fluid class=" cover">
         <v-img src="@/assets/img/clouds.svg" id="clouds"    ></v-img>
         <v-img id="plan" src="@/assets/img/svgplan.svg"     ></v-img>
-
+<h1>hellllo</h1>
 
 
 

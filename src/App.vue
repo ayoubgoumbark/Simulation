@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app v-cloak>
     <navigation :color="selectedstyle.color" :flat="flat" :coloritem="selectedstyle.coloritem"/>
     <v-main color="red" class=" ">
      <router-view  ></router-view>
