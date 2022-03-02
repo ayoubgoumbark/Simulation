@@ -13,8 +13,8 @@
             <img src="@/assets/img/logo.png" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">test</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title">Mamda Mcma</v-list-item-title>
+            <v-list-item-subtitle>Simulateur</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -63,13 +63,6 @@
       />
       <div v-else>
        
-       <!--  <v-btn :color="coloritem" text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">Produits</span>
-        </v-btn> -->
-      
-       <!--  <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Preços</span>
-        </v-btn> -->
         <v-btn :color="coloritem" rounded outlined text @click="$vuetify.goTo('#contact')">
           <span class="mr-2">Contactez-nous</span>
         </v-btn>

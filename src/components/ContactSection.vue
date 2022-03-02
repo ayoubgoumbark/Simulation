@@ -17,14 +17,23 @@
                 Email: ayoub.goumbark@email.com
               </h3>
             </v-col>
-            <v-col cols="12" sm="7">
-              <v-form ref="form" v-model="valid" :lazy-validation="lazy">
+            <v-col class="cloudformcontainer" cols="12" sm="7">
+
+
+
+
+ <v-img id="cloudform" src="@/assets/img/cloudform.svg"     >
+  
+ </v-img>
+ <v-form  ref="form" v-model="valid" :lazy-validation="lazy">
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
                     label="Nome"
                     required
-                    :color="selectedstyle.coloritem"
+                    :color="selectedstyle.color"
+                   outlined
+                   dense
                 ></v-text-field>
 
                 <v-text-field
@@ -32,15 +41,22 @@
                     :rules="emailRules"
                     label="E-mail"
                     required
-                    :color="selectedstyle.coloritem"
+                    outlined
+                    dense
+                    :color="selectedstyle.color"
                 ></v-text-field>
 
                 <v-textarea
+                auto-grow
+          outlined
+          rows="1"
+          row-height="15"
                     v-model="textArea"
                     :rules="textAreaRules"
                     label="Mensagem"
                     required
-                   :color="selectedstyle.coloritem"
+                   :color="selectedstyle.color"
+                   dense
                 />
 
                 <v-btn
@@ -51,10 +67,13 @@
                     block
                     class="mt-3"
                     @click="submit"
+                    small
+                    
                 >
                   Enviar
                 </v-btn>
               </v-form>
+
             </v-col>
           </v-row>
         </v-col>
@@ -84,21 +103,6 @@
     </v-snackbar>
   </section>
 </template>
-
-<style scoped>
-
-
-.svg-border-waves .v-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-</style>
-
 <script>
 // import {db} from '@/main'
 
@@ -164,3 +168,54 @@ handler(){
   }
 };
 </script>
+<style scoped>
+
+
+.svg-border-waves .v-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+.cloudformcontainer{
+
+display: flex;
+justify-content: center;
+position:relative;
+align-items: center;
+
+}
+
+
+
+#cloudform{
+position:relative;
+
+}
+
+
+.cloudformcontainer form {
+position:absolute;
+
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .v-responsive{
+  max-width: 184% !important;
+}
+}
+
+
+</style>
