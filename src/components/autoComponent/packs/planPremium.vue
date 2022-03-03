@@ -138,7 +138,7 @@ export default {
       this.$refs.form.reset();
      this.$refs.card
         .classList.remove("cardrotate");
-      document.getElementById("carloading").remove();
+     
       this.$refs.card.style.boxShadow =
         "";
      this.$refs.back.style.display = "none";

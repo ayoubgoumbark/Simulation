@@ -205,38 +205,25 @@ export default {
  
   methods: {
   reset () {
+    
         this.$refs.form.reset()
          this.$refs.card.classList.remove("cardrotate");  
-         document.getElementById("carloading").remove();  
+        
         this.$refs.card.style.boxShadow =""; 
         this.$refs.back.style.display = "none";
-          this.$refs.front.style.display = "block"; 
+          this.$refs.Front.style.display = "block"; 
       },
       annuler(){
-         this.$refs.form.reset()
-        this.action="calculer"   
-this.disablecheckbox=!this.disablecheckbox
-this.$refs.price.innerText="----- DH"
-
-
+         this.$refs.form.reset();
+         this.action="calculer";
+         this.disablecheckbox=!this.disablecheckbox;
+         this.$refs.price.innerText="----- DH";
       },
     calculer: function () {
-console.log("calcul",this.data.listeGarantie)
-   
-
-     
-
- this.$refs.card.classList.add("cardrotate");
+/* console.log("calcul",this.data.listeGarantie) */
+      this.$refs.card.classList.add("cardrotate");
       this.$refs.back.style.display = "block";
-      this.$refs.Front.style.display = "none"; 
-
-
-  
-     
-
-     
- 
-               
+      this.$refs.Front.style.display = "none";             
     },
    
     checkgarantie(id){

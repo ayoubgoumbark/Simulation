@@ -17,7 +17,7 @@
                 Email: ayoub.goumbark@email.com
               </h3>
             </v-col>
-            <v-col class="cloudformcontainer" cols="12" sm="7">
+            <v-col  class="cloudformcontainer" cols="12" sm="7">
 
 
 
@@ -48,12 +48,12 @@
 
                 <v-textarea
                 auto-grow
-          outlined
-          rows="1"
-          row-height="15"
+                outlined
+                rows="1"
+                row-height="15"
                     v-model="textArea"
                     :rules="textAreaRules"
-                    label="Mensagem"
+                    label="Mensage"
                     required
                    :color="selectedstyle.color"
                    dense
@@ -155,12 +155,8 @@ export default {
 '$route':{
 handler(){
      
-  
-
-          this.selectedstyle=this.$route.meta.PrimaryNav 
+   this.selectedstyle=this.$route.meta.PrimaryNav 
          
-    
-  
 },
  immediate: true, deep: true
 
