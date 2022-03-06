@@ -7,7 +7,7 @@
             <v-col cols="12" sm="5">
               <h1 class="font-weight-light display-1">Contactez-nous</h1>
               <h3 class="font-weight-light mt-3">
-               Découvrez les offres et simulation des tarifs des assurances : auto, moto, habitation, santé, entreprise chez Mamda Mcma Assurance.
+               Découvrez les offres et simulation des tarifs des assurances : auto, moto, habitation, santé, entreprise chez AssurenceAssurance.
               </h3>
              
               <h3 class="font-weight-light mt-3">
@@ -31,8 +31,7 @@
                     :rules="nameRules"
                     label="Nome"
                     required
-                    :color="selectedstyle.color"
-                   outlined
+                  outlined
                    dense
                 ></v-text-field>
 
@@ -43,7 +42,7 @@
                     required
                     outlined
                     dense
-                    :color="selectedstyle.color"
+                   
                 ></v-text-field>
 
                 <v-textarea
@@ -55,7 +54,7 @@
                     :rules="textAreaRules"
                     label="Mensage"
                     required
-                   :color="selectedstyle.color"
+                   
                    dense
                 />
 

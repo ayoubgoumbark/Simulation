@@ -18,7 +18,7 @@ const app=new Vue({
   vuetify,
    data: { loading: false },
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app') 
 
 router.beforeEach((to, from, next) => {
   app.loading = true

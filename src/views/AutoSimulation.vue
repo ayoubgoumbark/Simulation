@@ -13,9 +13,9 @@
       </v-col>
       <v-col class="px-10">
         <div class="container">
-          <h3 class="font-weight-bold mb-4">MAMDA & MCMA</h3>
+          <h3 class="font-weight-bold mb-4">X company</h3>
           <p class="font-weight-light">
-           Pour choisir la formule la plus adaptée à vos besoins, effectuer la simulation Automobile de Mamda Mcma Assurance !
+           Pour choisir la formule la plus adaptée à vos besoins, effectuer la simulation Automobile de X Assurance !
           </p>
 
           <v-form ref="form" class light>

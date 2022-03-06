@@ -12,7 +12,7 @@
       </v-col>
       <v-col class="px-10">
         <div class="container">
-          <h3 class="font-weight-bold mb-4">MAMDA & MCMA</h3>
+          <h3 class="font-weight-bold mb-4">X Company</h3>
           <p class="font-weight-light">
             Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Maiores porro voluptatibus

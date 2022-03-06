@@ -13,7 +13,7 @@
             <img src="@/assets/img/logo.png" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Mamda Mcma</v-list-item-title>
+            <v-list-item-title class="title">X company</v-list-item-title>
             <v-list-item-subtitle>Simulateur</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
@@ -52,7 +52,7 @@
 
       <v-toolbar-title >
       <!--   <v-img src="@/assets/img/logo.png" max-width="50px" /> -->
-      <v-btn text :color="coloritem"  >Mamda Mcma</v-btn>
+      <v-btn text :color="coloritem"  >X company</v-btn>
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon

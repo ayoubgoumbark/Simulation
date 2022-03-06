@@ -91,12 +91,15 @@ contact
   watch: {
 '$route':{
 handler(){
+  console.log("hiii")
       const top = window.pageYOffset || 0;
+       console.log("hiii",top)
+       this.selectedstyle=this.$route.meta.PrimaryNav 
     if (top <= 64) {
       
       this.flat = true;
 
-          this.selectedstyle=this.$route.meta.PrimaryNav 
+         
          
     }
   
