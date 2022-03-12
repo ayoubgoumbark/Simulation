@@ -95,7 +95,7 @@ export default {
     let counter = setInterval(function () {
    
     startValue +=increment;
-    element.textContent = startValue.toFixed(2) +'DH';
+    element.textContent = startValue.toFixed(2) +'   DH';
     if (Math.floor(startValue) ==   Math.floor(endValue) ) {
         element.textContent=endValue
       clearInterval(counter);

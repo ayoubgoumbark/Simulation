@@ -464,7 +464,7 @@ section {
 
 #plan {
 
-
+ 
 z-index:1;
 position:absolute; 
 right:0;
