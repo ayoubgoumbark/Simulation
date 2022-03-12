@@ -2,14 +2,11 @@
   <section id="hero" >
 
     <v-container  fluid class=" cover">
-        <v-img src="@/assets/img/clouds.svg" id="clouds"    ></v-img>
-        <v-img id="plan" src="@/assets/img/svgplan.svg"     ></v-img>
+        <v-img src="@/assets/img/clouds.svg" id="clouds"></v-img>
+        <v-img id="plan" src="@/assets/img/svgplan.svg"></v-img>
 
-
-
-
-        <div class="birds">
-<div class="bird-container bird-container--one" >
+    <div class="birds">
+      <div class="bird-container bird-container--one" >
 			<div class="bird bird--one"></div>
 		</div>
 
@@ -28,7 +25,7 @@
 
 
 
-      <v-row  align="center" justify="center">
+      <v-row  align="center" justify="center" style="z-index:2;">
        
         <v-col cols="12" md="6" xl="6">
           <!--  class="hidden-sm-and-down" -->
@@ -43,14 +40,15 @@
             Demandez Votre Assurance de chez vous a n'importe quel moment.
           </h1>
           <v-btn
-           
-             text
+            @click="GotoFeatures"
+              outlined
             large
             dark
           
             class="mt-5"
+          
           >
-            Découvrez nos offres
+            Découvrez nos offres 
             <v-icon class="ml-2">mdi-arrow-down</v-icon>
           </v-btn>
           <!--          <div class="video d-flex align-center py-4">
@@ -181,9 +179,7 @@ export default {
       ],
     };
   },
-  watch: {
-  
-  },
+
   methods: {
     navigate: function (val) {
       this.produit = val;
@@ -197,6 +193,12 @@ export default {
         this.$router.push("/MRHSimulation");
       }
     },
+GotoFeatures(){
+  console.log("ljkljljl");
+this.$vuetify.goTo('#features')
+
+}
+
   
 
   

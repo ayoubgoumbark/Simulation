@@ -29,7 +29,7 @@
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
-                    label="Nome"
+                    label="Nom"
                     required
                   outlined
                    dense
@@ -52,7 +52,7 @@
                 row-height="15"
                     v-model="textArea"
                     :rules="textAreaRules"
-                    label="Mensage"
+                    label="Message"
                     required
                    
                    dense
@@ -112,18 +112,18 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "O campo nome é obrigatório",
-      (v) => (v && v.length >= 6) || "O nome precisa ter mais de 6 caracteres",
+      (v) => !!v || "nom est Obligatoire",
+      (v) => (v && v.length >= 6) || "Le nom doit comporter plus de 6 caractères",
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "O campo email é obrigatório",
-      (v) => /.+@.+\..+/.test(v) || "O E-mail precisa ser válido",
+      (v) => !!v || "email est Obligatoire",
+      (v) => /.+@.+\..+/.test(v) || "email invalide",
     ],
     textArea: "",
     textAreaRules: [
-      (v) => !!v || "O campo de texto é obrigatório",
-      (v) => (v && v.length >= 10) || "Mínimo de 10 caracteres",
+      (v) => !!v || "Message est Obligatoire",
+      (v) => (v && v.length >= 10) || "minimum  10 caracteres",
     ],
     lazy: false,
     snackbar: {
